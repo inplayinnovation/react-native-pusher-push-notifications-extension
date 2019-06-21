@@ -8,17 +8,17 @@ import java.util.Set;
 
 import com.facebook.react.bridge.*;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
-import com.google.firebase.messaging.RemoteMessage;
 
 import com.pusher.pushnotifications.PushNotifications;
-import com.pusher.pushnotifications.SubscriptionsChangedListener;
-import com.pusher.pushnotifications.PushNotificationReceivedListener;
+
+import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.ReadableMap;
 
 public class ExtendedPusherWrapper extends PusherWrapper {
     public ExtendedPusherWrapper(String appKey, final ReactContext context) {
         super(appKey, context);
     }
-    
+
     public void setUserId(final String userId, final ReadableMap tokenProvider, final Callback errorCallback,  final Callback successCallback) {
         Log.d("PUSHER_WRAPPER", "Setting userId to " +  userId);
         System.out.print("Setting userId to " +  userId);
