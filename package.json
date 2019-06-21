@@ -1,5 +1,5 @@
 {
-  "name": "react-native-pusher-push-notifications-wrapper",
+  "name": "react-native-pusher-push-notifications-extension",
   "version": "1.0.0",
   "description": "React Native pusher push notification extension",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unblockable/react-native-pusher-push-notifications-wrapper.git"
+    "url": "git+https://github.com/unblockable/react-native-pusher-push-notifications-extension.git"
   },
   "keywords": [
     "react-native",
