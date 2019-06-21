@@ -15,6 +15,10 @@ import com.pusher.pushnotifications.SubscriptionsChangedListener;
 import com.pusher.pushnotifications.PushNotificationReceivedListener;
 
 public class ExtendedPusherWrapper extends PusherWrapper {
+    public ExtendedPusherWrapper(String appKey, final ReactContext context) {
+        super(appKey, context);
+    }
+    
     public void setUserId(final String userId, final ReadableMap tokenProvider, final Callback errorCallback,  final Callback successCallback) {
         Log.d("PUSHER_WRAPPER", "Setting userId to " +  userId);
         System.out.print("Setting userId to " +  userId);
