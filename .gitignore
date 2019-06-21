@@ -4,6 +4,8 @@
 .idea/vcs.xml
 .idea/workspace.xml
 
+*.project
+**/.project
 
 # Xcode
 #
